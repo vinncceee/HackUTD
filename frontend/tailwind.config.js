@@ -11,8 +11,10 @@ module.exports = {
           100: '#4d6b97',
           200: '#0083ab',
           300: '#009799',
-          300: '#00a564',
-          300: '#7caa15',
+          400: '#00a564',
+          500: '#7caa15',
+          600: '#D5FEFB',
+
         },
         secondary: {
           // Define more custom colors here
