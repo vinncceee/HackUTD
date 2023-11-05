@@ -24,7 +24,7 @@ Company Data Gathering
 
 
 ## Project inspiration
-Having teammates from diverse cultures and countries of origin, we found a common issue regarding the accessibility towards financial literacy, with Diversifynance language barriers are no more.
+Having teammates from diverse cultures and countries of origin, we found a common issue regarding the accessibility towards financial literacy, but with Diversifynance language barriers are no more.
 
 ## Project Goal
 Our project goal is rooted in our shared mission to empower individuals from diverse cultural backgrounds with essential financial knowledge. Our objective is crystal clear: to provide accessible, tailored financial guidance. Through our efforts, we aspire to transform the journey to financial literacy into an inclusive and empowering experience for everyone.
