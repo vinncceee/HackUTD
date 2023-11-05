@@ -10,11 +10,25 @@ A Next.js app to simplify your Finances
 - Flask [dosc](https://flask.palletsprojects.com/en/3.0.x/)
 - React [docs](https://react.dev/learn)
 - beautifulsoup4 [docs](https://beautiful-soup-4.readthedocs.io/en/latest/)
+## Project Details
+Input to Chat conversion
+
+![Diagram 1](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/1stimage.png)
+
+Chat Context Requirements
+
+![Diagram 2](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/2ndimage.png)
+
+Company Data Gathering
+
+![Diagram 3](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/3rdimage.png)
+
+
 ## Project inspiration
 
 ## Project Goal
 
-## Project Details
+
 
 
 ## Pull requests
