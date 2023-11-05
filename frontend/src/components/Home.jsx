@@ -10,8 +10,6 @@ export default function Home() {
   return (
     <div>
       <Navbar></Navbar>
-      
-
 
       <div className="flex justify-center items-start h-screen">
         {/* Centering container */}
