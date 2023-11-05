@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -42,12 +43,12 @@ export default function Navbar() {
         <div className="relative inline-block text-left">
         <button
         onClick={toggleDropdown}
-        className="px-4 py-1 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-300 font-rubik"
+        className="px-4 py-1 text-xl text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-300 font-rubik"
         >
         Languages
         {/* Replace the checkmark icon with a drop-down arrow */}
         <svg
-        className="-mr-1 ml-1 h-6 w-6"
+        className="-mr-44 ml-10 h-6 w-32"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
