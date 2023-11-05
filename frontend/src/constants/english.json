@@ -8,5 +8,11 @@
     "nav1": "Home",
     "nav2": "About",
     "nav3": "Services",
-    "nav4": "Contact"
+    "nav4": "Contact",
+    "option1": "About",
+    "option2": "Checking account",
+    "option3": "Brokerage",
+    "option4": "Online commissions",
+    "option5": "Margin rates",
+    "option6": ""
 }
