@@ -16,7 +16,7 @@ export default function Home() {
         <div className="flex flex-col items-center w-full px-8 lg:px-16">
           {/* Increased margin-top (mt-20) */}
           {/* Main header */}
-          <h1 className="text-8xl text-center mb-20 mt-20 font-rubik">PROJECT NAME</h1>
+          <h1 className="text-8xl text-center mb-20 mt-20 font-rubik">DIVERSIFYNANCE</h1>
           {/* Blue rectangle */}
           <div className="relative w-11/12 h-96 rounded-3xl" style={gradientStyle}>
             {/* Container for insideheader and additional text */}
