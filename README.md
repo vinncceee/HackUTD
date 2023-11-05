@@ -4,7 +4,7 @@ Cultivating Financial Empowerment Across Cultures
 - Next.js [docs](https://nextjs.org/docs)
 - TailwindCSS [docs](https://tailwindcss.com/docs/installation)
 - OpenAI GPT API [docs](https://platform.openai.com/docs/api-reference)
-- MOngoDB [docs](https://www.mongodb.com/docs/)
+- MongoDB [docs](https://www.mongodb.com/docs/)
 - Javascript [docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 - Flask [dosc](https://flask.palletsprojects.com/en/3.0.x/)
 - React [docs](https://react.dev/learn)
@@ -24,9 +24,10 @@ Company Data Gathering
 
 
 ## Project inspiration
+Having teammates from diverse cultures and country of origins, we found a common issue regarding the accessibility to financial literacy.With just one search having so much random information thrown at you could be confusing for a lot of people, especially with language as an additional barrier.
 
 ## Project Goal
-
+Our project goal is rooted in our shared mission to empower individuals from diverse cultural backgrounds with essential financial knowledge. Our objective is crystal clear: to provide accessible, tailored financial guidance. Through our efforts, we aspire to transform the journey to financial literacy into an inclusive and empowering experience for everyone
 
 
 
