@@ -3,8 +3,19 @@ import Navbar from '../components/Navbar'; // Import the Navbar component
 import englishData from '../constants/english.json';
 import spanishData from '../constants/spanish.json';
 import hindiData from '../constants/hindi.json';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SelectCompany = () => {
+  const navigate = useNavigate();
+
+  const financialCompanies = [
+    'Fidelity',
+    'JPMorgan Chase',
+    'Bank of America',
+    'Wells Fargo',
+    'Capital One',
+  ];
+
   // set different languages
   const languages = {
     english: englishData,
@@ -19,25 +30,17 @@ const SelectCompany = () => {
   };
 
   const [companies, setCompanies] = useState([
-    { id: 1, checked: false, name: 'About' },
-    { id: 2, checked: false, name: 'Checking account' },
-    { id: 3, checked: false, name: 'Savings account' },
-    { id: 4, checked: false, name: 'Brokerage' },
-    { id: 5, checked: false, name: 'Online commissions' },
-    { id: 6, checked: false, name: 'Margin rates' },
-    { id: 7, checked: false, name: 'Fee information' },
+    { id: 1, checked: false, name: 'About', val: "about"},
+    { id: 2, checked: false, name: 'Checking account', val: "checking" },
+    { id: 3, checked: false, name: 'Savings account', val: "savings" },
+    { id: 4, checked: false, name: 'Brokerage', val: "brokerage" },
+    { id: 5, checked: false, name: 'Online commissions', val: "onlineCommissions" },
+    { id: 6, checked: false, name: 'Margin rates', val: "marginRates" },
+    { id: 7, checked: false, name: 'Fee information', val: "feeInfo" },
     // Add more companies as needed
   ]);
 
   const [selectedFinancialCompany, setSelectedFinancialCompany] = useState('');
-
-  const financialCompanies = [
-    'Fidelity',
-    'JPMorgan Chase',
-    'Bank of America',
-    'Wells Fargo',
-    'Capital One',
-  ];
 
   const toggleCompanySelection = (id) => {
     const updatedCompanies = companies.map((company) =>
@@ -48,6 +51,21 @@ const SelectCompany = () => {
 
   const handleFinancialCompanyChange = (event) => {
     setSelectedFinancialCompany(event.target.value);
+  };
+
+  const startChatting = () => {
+    // Create an array of selected company values
+    const selectedCompanyValues = companies
+      .filter((company) => company.checked)
+      .map((company) => company.val);
+
+    // Pass the selectedCompanyValues and selectedFinancialCompany to the Chat component using the Link component
+    navigate('/chatBot', {
+      state: {
+        "company": selectedFinancialCompany,
+        "categories": selectedCompanyValues
+      },
+    });
   };
 
   return (
@@ -108,17 +126,12 @@ const SelectCompany = () => {
            
           </div>
           {/* Start Chatting Button */}
-          <div className="text-center mt-8">
-            <button
-              onClick={() => {
-                // Add your logic to handle the "Start Chatting" button click
-                console.log('Start Chatting clicked');
-              }}
-              className="bg-blue-500 text-white rounded-full py-4 px-7 hover:bg-blue-600 transition duration-300 font-rubik w-52"
-            >
-              Start Chatting
-            </button>
-          </div>
+          <button
+            onClick={startChatting}
+            className="bg-blue-500 text-white rounded-full py-4 px-7 hover-bg-blue-600 transition duration-300 font-rubik w-52"
+          >
+            Start Chatting
+          </button>
         </div>
       </div>
     </div>
