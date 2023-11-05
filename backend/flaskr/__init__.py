@@ -7,6 +7,7 @@ def create_app():
 
     # Add blueprints
     from flaskr.modules.scraping import scrap_bp
-    app.register_blueprint(scrap_bp, url_prefix="/data")
+    app.register_blueprint(scrap_bp, url_prefix="/scrap")
+    
 
     return app
