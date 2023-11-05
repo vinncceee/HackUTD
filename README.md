@@ -9,7 +9,7 @@ Cultivating Financial Empowerment Across Cultures
 - Flask [dosc](https://flask.palletsprojects.com/en/3.0.x/)
 - React [docs](https://react.dev/learn)
 - beautifulsoup4 [docs](https://beautiful-soup-4.readthedocs.io/en/latest/)
-- axios [docs]([https://axios.co/docs](https://axios-http.com/docs/intro))
+- axios [docs](https://beautiful-soup-4.readthedocs.io/en/latest/)
 
 ## Project inspiration
 Having friends & family from diverse cultures and different countries of origin, we found a common issue regarding the accessibility towards learning financial literacy, but with Diversifynance language barriers are no more!
