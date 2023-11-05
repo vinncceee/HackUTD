@@ -8,7 +8,7 @@ export default function SelectCompany() {
     
     <body>
 
-        <div className=" text-white py-7 bg-red-300" >
+        <div className=" text-white py-7 bg-primary-300" >
             <div className="container mx-0 text-center">
                 <h1></h1>
             </div>
