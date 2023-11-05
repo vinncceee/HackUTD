@@ -8,7 +8,7 @@ import SelectCompany from './components/SelectCompany';
 function App() {
   return (
     <div className="App bg-primary-600"> {/* Apply the custom color class here */}
-      <Chat/>
+      <SelectCompany/>
     </div>
   );
 }
