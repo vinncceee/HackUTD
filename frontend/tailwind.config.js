@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'rubik': ["Rubik", "sans-serif"],
+        'slabo': ["'Slabo 13px'", "serif"], // Use 'slabo-13px' with a hyphen
+      },
       colors: {
         // Define your custom colors here
         primary: {
