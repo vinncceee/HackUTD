@@ -1,7 +1,7 @@
 # Diversifynance
 Cultivating Financial Empowerment Across Cultures
 ## Technologies involve
-- React.js [docs]([https://tailwindcss.com/docs/installation])
+- React.js [docs](https://tailwindcss.com/docs/installation)
 - TailwindCSS [docs](https://tailwindcss.com/docs/installation)
 - OpenAI GPT API [docs](https://platform.openai.com/docs/api-reference)
 - MongoDB [docs](https://www.mongodb.com/docs/)
