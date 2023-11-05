@@ -63,6 +63,7 @@ export default function Home() {
               <div className="">
                 <img src={img1} alt="person" className="w-96 h-auto" />
               </div>
+              
             </div>
           </div>
         </div>

@@ -1,8 +1,24 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar'; // Import the Navbar component
 import img2 from '../assets/img/example-4.svg'; // Import your SVG image
+import englishData from '../constants/english.json';
+import spanishData from '../constants/spanish.json';
+import hindiData from '../constants/hindi.json';
 
 const SelectCompany = () => {
+// set seffirent languages
+const languages = {
+    english: englishData,
+    spanish: spanishData,
+    hindi: hindiData,
+  };
+
+  const [currentLanguage, setCurrentLanguage] = useState('english');
+  
+  const changeLanguage = (language) => {
+    setCurrentLanguage(language);
+  };
+
   const [companies, setCompanies] = useState([
     { id: 1, checked: false, name: 'About' },
     { id: 2, checked: false, name: 'checking account' },
@@ -23,7 +39,7 @@ const SelectCompany = () => {
     'Wells Fargo',
     'Capital One',
   ];
-
+  
   const toggleCompanySelection = (id) => {
     const updatedCompanies = companies.map((company) =>
       company.id === id ? { ...company, checked: !company.checked } : company
@@ -37,7 +53,7 @@ const SelectCompany = () => {
 
   return (
     <div>
-      <Navbar /> {/* Render the Navbar component here */}
+      <Navbar changeLanguage={changeLanguage} language={languages[currentLanguage].lan} nav1={languages[currentLanguage].nav1} nav2={languages[currentLanguage].nav2} nav3={languages[currentLanguage].nav3} nav4={languages[currentLanguage].nav4}/> {/* Render the Navbar component here */}
       <div className="bg-primary-600 min-h-screen p-20">
         <div className="container mx-auto">
           <div className="mt-6">
