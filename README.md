@@ -9,6 +9,8 @@ Cultivating Financial Empowerment Across Cultures
 - Flask [dosc](https://flask.palletsprojects.com/en/3.0.x/)
 - React [docs](https://react.dev/learn)
 - beautifulsoup4 [docs](https://beautiful-soup-4.readthedocs.io/en/latest/)
+- axiom [docs](https://axiom.co/docs)
+  
 ## Project Details
 Input to Chat conversion
 
