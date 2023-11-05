@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
+
+import englishData from '../constants/english.json';
+import spanishData from '../constants/spanish.json';
+import hindiData from '../constants/hindi.json';
 
 export default function Chat() {
   const location = useLocation();
@@ -40,9 +45,25 @@ export default function Chat() {
     console.log(location.state.company)
   };
 
+  // Navigate index
+  const navigate = useNavigate();
+
+  // set seffirent languages
+  const languages = {
+    english: englishData,
+    spanish: spanishData,
+    hindi: hindiData,
+  };
+
+  const [currentLanguage, setCurrentLanguage] = useState('english');
+  
+  const changeLanguage = (language) => {
+    setCurrentLanguage(language);
+  };
+
   return (
     <div className="flex flex-col h-screen">
-      <Navbar />
+      <Navbar changeLanguage={changeLanguage} language={languages[currentLanguage].lan} nav1={languages[currentLanguage].nav1} nav2={languages[currentLanguage].nav2} nav3={languages[currentLanguage].nav3} nav4={languages[currentLanguage].nav4}/>
       <div className="flex-1 overflow-hidden px-4 py-2">
         <div className="max-w-lg mx-auto flex flex-col h-full bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-rubik mb-4">Chat Bot</h2>

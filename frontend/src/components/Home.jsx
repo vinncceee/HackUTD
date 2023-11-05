@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from './Footer'
 import { useState } from 'react';
 
+
 import englishData from '../constants/english.json';
 import spanishData from '../constants/spanish.json';
 import hindiData from '../constants/hindi.json';
@@ -33,7 +34,6 @@ export default function Home() {
   return (
     <div>
       <Navbar changeLanguage={changeLanguage} language={languages[currentLanguage].lan} nav1={languages[currentLanguage].nav1} nav2={languages[currentLanguage].nav2} nav3={languages[currentLanguage].nav3} nav4={languages[currentLanguage].nav4}/>
-
       <div className="flex justify-center items-start h-screen">
         {/* Centering container */}
         <div className="flex flex-col items-center w-full px-8 lg:px-16">
