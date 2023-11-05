@@ -1,7 +1,7 @@
-from connectDb import get_company_collections
+from flaskr.connectDb import get_company_collections
 
 """Get about company data"""
-def get_about(company):
+def get_about(company) -> str:
 
     # collection
     collection = get_company_collections()
@@ -13,13 +13,13 @@ def get_about(company):
         about_company = document.get('about')
 
         if about_company:
-            print(about_company)
+            return(about_company)
 
-    print(f"Document not found for company {company}")
+    return "Document not found for company {company}"
 
 
 """Get checking account data"""
-def get_checking(company):
+def get_checking(company) -> str:
 
     # collection
     collection = get_company_collections()
@@ -31,12 +31,12 @@ def get_checking(company):
         checking_info = document.get('checking-savings')
 
         if checking_info:
-            print(checking_info)
+            return(checking_info)
 
-    print(f"Document not found for company {company}")
+    return(f"Document not found for company {company}")
 
 """Get savings account data"""
-def get_savings(company):
+def get_savings(company) -> str:
 
     # collection
     collection = get_company_collections()
@@ -48,13 +48,13 @@ def get_savings(company):
         savings_info = document.get('checking-savings')
 
         if savings_info:
-            print(savings_info)
+            return(savings_info)
 
-    print(f"Document not found for company {company}")
+    return(f"Document not found for company {company}")
 
 
 """Get brokerage data"""
-def get_brokerage(company):
+def get_brokerage(company) -> str:
 
     # collection
     collection = get_company_collections()
@@ -66,12 +66,12 @@ def get_brokerage(company):
         brokerage_info = document.get('brokerage')
 
         if brokerage_info:
-            print(brokerage_info)
+            return(brokerage_info)
 
-    print(f"Document not found for company {company}")
+    return(f"Document not found for company {company}")
 
 """Get online commissions data"""
-def get_onlineCommissions(company):
+def get_onlineCommissions(company) -> str:
 
     # collection
     collection = get_company_collections()
@@ -83,12 +83,12 @@ def get_onlineCommissions(company):
         onlineCommisions = document.get('onlineCommissions')
 
         if onlineCommisions:
-            print(onlineCommisions)
+            return(onlineCommisions)
 
-    print(f"Document not found for company {company}")
+    return(f"Document not found for company {company}")
 
 """Get margin rates data"""
-def get_marginRates(company):
+def get_marginRates(company) -> str:
 
     # collection
     collection = get_company_collections()
@@ -100,13 +100,13 @@ def get_marginRates(company):
         marginRates = document.get('marginRates')
 
         if marginRates:
-            print(marginRates)
+            return(marginRates)
 
-    print(f"Document not found for company {company}")
+    return(f"Document not found for company {company}")
 
 
 """Get fee information data"""
-def get_feeInformation(company):
+def get_feeInformation(company) -> str:
 
     # collection
     collection = get_company_collections()
@@ -118,6 +118,8 @@ def get_feeInformation(company):
         feeInformation = document.get('feeInformation')
 
         if feeInformation:
-            print(feeInformation)
+            return(feeInformation)
 
-    print(f"Document not found for company {company}")
+    return(f"Document not found for company {company}")
+
+# get_feeInformation('fidelity')
