@@ -1,5 +1,6 @@
 import img1 from '../assets/img/example-19.svg';
 import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const gradientStyle = {
@@ -9,7 +10,7 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar/>
 
       <div className="flex justify-center items-start h-screen">
         {/* Centering container */}
