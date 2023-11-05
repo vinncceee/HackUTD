@@ -1,4 +1,5 @@
 import img1 from '../assets/img/example-19.svg';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   const gradientStyle = {
@@ -8,19 +9,16 @@ export default function Home() {
 
   return (
     <div>
-      {/* Fixed navigation bar */}
-      <div className="bg-primary-300 text-white py-4 fixed top-0 left-0 right-0 z-10">
-        <div className="container mx-0 text-center">
-          <h1>Navigation Bar</h1>
-        </div>
-      </div>
+      <Navbar></Navbar>
+      
 
-      <div className="flex justify-center items-start h-screen mt-20">
+
+      <div className="flex justify-center items-start h-screen">
         {/* Centering container */}
         <div className="flex flex-col items-center w-full px-8 lg:px-16">
           {/* Increased margin-top (mt-20) */}
           {/* Main header */}
-          <h1 className="text-6xl text-center mb-9 font-rubik">PROJECT NAME</h1>
+          <h1 className="text-8xl text-center mb-20 mt-20 font-rubik">PROJECT NAME</h1>
           {/* Blue rectangle */}
           <div className="relative w-11/12 h-96 rounded-3xl" style={gradientStyle}>
             {/* Container for insideheader and additional text */}
