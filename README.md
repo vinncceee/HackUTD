@@ -1,7 +1,7 @@
 # Diversifynance
 Cultivating Financial Empowerment Across Cultures
 ## Technologies involve
-- Next.js [docs](https://nextjs.org/docs)
+- React.js [docs]([https://nextjs.org/docs](https://react.dev/))
 - TailwindCSS [docs](https://tailwindcss.com/docs/installation)
 - OpenAI GPT API [docs](https://platform.openai.com/docs/api-reference)
 - MongoDB [docs](https://www.mongodb.com/docs/)
@@ -9,35 +9,57 @@ Cultivating Financial Empowerment Across Cultures
 - Flask [dosc](https://flask.palletsprojects.com/en/3.0.x/)
 - React [docs](https://react.dev/learn)
 - beautifulsoup4 [docs](https://beautiful-soup-4.readthedocs.io/en/latest/)
-- axiom [docs](https://axiom.co/docs)
+- axios [docs]([https://axios.co/docs](https://axios-http.com/docs/intro))
+
+## Project inspiration
+Having friends & family from diverse cultures and different countries of origin, we found a common issue regarding the accessibility towards learning financial literacy, but with Diversifynance language barriers are no more!
+
+## Project Goal
+Our project goal is rooted in our shared mission to empower individuals from diverse cultural backgrounds with little to no access to financial education. Our objective is crystal clear: to provide accessible, tailored financial guidance with through our efforts, we aspire to transform the journey to financial literacy into an inclusive and empowering experience for everyone.
+
+## Diversifynance Future
+Our team is planning to incorporate a sophiscated algorithm to automate web scraping. In this way, the users relying on our app will have access to up-to-date information about the most important financial institutions and their available services. Also, we are looking towars integrating a wider variety of languages in the app.
   
-## Project Details
+## Project
 Landing page
 
 ![Diagram 1](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/image2222.png)
 
-Input to Chat conversion
+## Project Demo
+https://www.youtube.com/watch?v=Q9gL1NHhOoE
 
+## Data Flow Diagrams
+**Input to Chat OpenAI chat:** Flow diagram explaining how the system gathers user input and data from web scraping to inject context about selected companies
 ![Diagram 1](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/1stimage.png)
 
-Chat Context Requirements
+**Chat Context Requirements:** Node listing all user inputs to inject data as conversation context
 
 ![Diagram 2](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/2ndimage.png)
 
-Company Data Gathering
+**Company Data Gathering:** Flow diagram showing how our application gathers data from financial websites using web scraping
 
 ![Diagram 3](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/3rdimage.png)
 
+## Getting Started
+Populate environment variables in .env.local:
+---
+```OPENAI_KEY=```
 
-## Project inspiration
-Having teammates from diverse cultures and countries of origin, we found a common issue regarding the accessibility towards financial literacy, but with Diversifynance language barriers are no more.
+## Access backend directory and run:
+---
+```
+python -m venv venv_name
+.\venv_name\Scripts\activate
+pip install -r requirements.txt
+py app.py
+```
 
-## Project Goal
-Our project goal is rooted in our shared mission to empower individuals from diverse cultural backgrounds with essential financial knowledge. Our objective is crystal clear: to provide accessible, tailored financial guidance. Through our efforts, we aspire to transform the journey to financial literacy into an inclusive and empowering experience for everyone.
-
-
-
-## Pull requests
+## Access frontend directory and run:
+---
+```
+npm install
+npm start
+```
 
 
 
