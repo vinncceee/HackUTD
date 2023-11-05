@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar'; // Import the Navbar component
-import img2 from '../assets/img/example-4.svg'; // Import your SVG image
 import englishData from '../constants/english.json';
 import spanishData from '../constants/spanish.json';
 import hindiData from '../constants/hindi.json';
@@ -106,8 +105,7 @@ const SelectCompany = () => {
                 </li>
               ))}
             </ul>
-            {/* SVG image placed to the right */}
-            <img src={img2} alt="SVG Image" className="w-56 mb-96" />
+           
           </div>
           {/* Start Chatting Button */}
           <div className="text-center mt-8">
