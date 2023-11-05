@@ -1,0 +1,9 @@
+/* fonts.css */
+@font-face {
+    font-family: 'Graphik Bold Trial';
+    src: url("../assets/font/Cabin-VariableFont") format('truetype'),
+        url("../assets/font/Graphik-Bold-Trial") format('opentype'),;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
