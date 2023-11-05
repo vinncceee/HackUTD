@@ -1,12 +1,12 @@
 import openai
 from flaskr.dbActions import get_about, get_brokerage, get_checking, get_feeInformation, get_marginRates, get_onlineCommissions, get_savings
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 def chat_with_bot(promp, categories, language):
 
     # Load data based on categories
-    context = f"Analyze the data to answer any question about it. And sey 'I'm ready for questions' in {language}. "
+    context = f"Analyze the data to answer any question about it. And sey 'I'm ready for questions' in {language}. Answer Should have max 50 characters"
 
     if 'about' in categories:
         context += get_about('fidelity')
