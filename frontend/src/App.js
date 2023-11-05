@@ -1,7 +1,8 @@
 
 import './App.css';
-import Home from './components/Home';
 import Chat from './components/Chat';
+import Home from './components/Home';
+import SelectCompany from './components/SelectCompany';
 
 
 function App() {
