@@ -1,4 +1,4 @@
-# DiversiFynance
+# Diversifynance
 Cultivating Financial Empowerment Across Cultures
 ## Technologies involve
 - Next.js [docs](https://nextjs.org/docs)
