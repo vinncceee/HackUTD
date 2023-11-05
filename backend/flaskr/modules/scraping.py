@@ -83,16 +83,3 @@ def fidelityAbout():
     return aboutData
 
 
-""" checking """
-@scrap_bp.route('/fidelity/services/checking')
-def fidelityChecking():
-    
-    # Get HTML
-    response = requests.get(urls['services']['checking'])
-
-    if response.status_code == 200:
-        HtmlFile = BeautifulSoup(response.text, 'html.parser')
-        
-        """ General info """
-
-    return urls['services']['checking']
