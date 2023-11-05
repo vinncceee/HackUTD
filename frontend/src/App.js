@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <div className="App bg-primary-600"> {/* Apply the custom color class here */}
-      <chat/>
+      <Chat/>
     </div>
   );
 }
