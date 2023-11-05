@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Crab from '../assets/img/krabs.png';
-
 
 const Footer = () => {
   const [easterEgg, setEasterEgg] = useState(false);
@@ -26,11 +24,9 @@ const Footer = () => {
         <div className="text-4xl opacity-0">💲</div>
       </div>
       
-      {/* Easter Egg Content - Crab Image */}
+      {/* Easter Egg Content - Crab Emoji */}
       {easterEgg && (
-        <div className="mt-2">
-          <img src="/krabs.png" alt="Crab" />
-        </div>
+        <div className="mt-2 text-2xl text-white">🦀"money"</div>
       )}
     </footer>
   );
