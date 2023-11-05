@@ -1,6 +1,5 @@
 # DiversiFynance
-A Next.js app to simplify your Finances
-
+Cultivating Financial Empowerment Across Cultures
 ## Technologies involve
 - Next.js [docs](https://nextjs.org/docs)
 - TailwindCSS [docs](https://tailwindcss.com/docs/installation)
