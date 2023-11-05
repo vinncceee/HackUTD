@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Navbar() {
+export default function Navbar({ changeLanguage, language, nav1, nav2, nav3, nav4 }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -16,25 +16,25 @@ export default function Navbar() {
             href="#"
             className="text-white hover:text-blue-200 transition duration-300 font-rubik"
           >
-            Home
+            {nav1}
           </a>
           <a
             href="#"
             className="text-white hover:text-blue-200 transition duration-300 font-rubik"
           >
-            About
+            {nav2}
           </a>
           <a
             href="#"
             className="text-white hover:text-blue-200 transition duration-300 font-rubik"
           >
-            Services
+            {nav3}
           </a>
           <a
             href="#"
             className="text-white hover:text-blue-200 transition duration-300 font-rubik"
           >
-            Contact
+            {nav4}
           </a>
         </div>
 
@@ -44,7 +44,7 @@ export default function Navbar() {
         onClick={toggleDropdown}
         className="px-4 py-1 text-xl text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600 transition duration-300 font-rubik"
         >
-        Languages
+        {language}
         {/* Replace the checkmark icon with a drop-down arrow */}
         <svg
         className="-mr-44 ml-10 h-6 w-32"
@@ -69,6 +69,7 @@ export default function Navbar() {
                   href="#"
                   className="block px-4 py-2 text-sm text-white hover:bg-blue-600 hover:text-white font-rubik"
                   role="menuitem"
+                  onClick={() => changeLanguage('english')}
                 >
                   English
                 </a>
@@ -76,6 +77,7 @@ export default function Navbar() {
                   href="#"
                   className="block px-4 py-2 text-sm text-white hover:bg-blue-600 hover:text-white font-rubik"
                   role="menuitem"
+                  onClick={() => changeLanguage('spanish')}
                 >
                   Spanish
                 </a>
@@ -83,6 +85,7 @@ export default function Navbar() {
                   href="#"
                   className="block px-4 py-2 text-sm text-white hover:bg-blue-600 hover:text-white font-rubik"
                   role="menuitem"
+                  onClick={() => changeLanguage('hindi')}
                 >
                   Hindi
                 </a>
