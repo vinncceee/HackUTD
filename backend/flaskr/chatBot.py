@@ -1,7 +1,7 @@
 import openai
 from flaskr.dbActions import get_about, get_brokerage, get_checking, get_feeInformation, get_marginRates, get_onlineCommissions, get_savings
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 def chat_with_bot(promp, categories, language):
 
@@ -34,5 +34,7 @@ def chat_with_bot(promp, categories, language):
         model="gpt-3.5-turbo",
         messages=[{"role":"system", "content": context},{"role": "user", "content": promp}]
     )
+
+    print(response.choices[0].message.content.strip())
 
     return response.choices[0].message.content.strip()
