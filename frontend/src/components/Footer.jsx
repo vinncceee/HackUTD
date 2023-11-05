@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Footer = () => {
+const Footer = ({text1, text2}) => {
   const [easterEgg, setEasterEgg] = useState(false);
 
   const toggleEasterEgg = () => {
@@ -18,7 +18,7 @@ const Footer = () => {
           💲
         </button>
 
-        <p className="text-2xl text-white font-rubik">Made with ❤️ for HackUTD</p>
+        <p className="text-2xl text-white font-rubik">{text1} ❤️ {text2}</p>
         
         {/* Placeholder for spacing */}
         <div className="text-4xl opacity-0">💲</div>
