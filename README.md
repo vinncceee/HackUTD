@@ -12,6 +12,10 @@ Cultivating Financial Empowerment Across Cultures
 - axiom [docs](https://axiom.co/docs)
   
 ## Project Details
+Landing page
+
+![Diagram 1](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/image2222.png)
+
 Input to Chat conversion
 
 ![Diagram 1](https://github.com/CardosoJavier/HackUTD/blob/main/frontend/src/assets/img/1stimage.png)
