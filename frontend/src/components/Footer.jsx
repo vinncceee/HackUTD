@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import crabImage from '../assets/img/karbs.png';
-
+import Crab from '../assets/img/krabs.png';
 
 
 const Footer = () => {
